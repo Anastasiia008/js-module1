@@ -61,6 +61,6 @@
 //     тело цикла
 // }
 
-for (let i = 9; i > -30; i -=1) {
-    console.log (i);
-}
+// for (let i = 9; i < 30; i +=1) {
+//     console.log (i);
+// }
