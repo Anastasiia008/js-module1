@@ -147,3 +147,173 @@
 // payment -= payment * discount;
 // console.log (`Оформляем заказ на сумму ${payment} со скидкой ${discount * 100} %`);
 // totalSpent += payment;
+
+
+
+// ---------------------------АВТОПЕРЕВІРКА-------------------------------------------
+// №1  Оголоси дві змінні, productName для назви товару, і pricePerItem для зберігання ціни за штуку. При оголошенні надай змінним наступні значення:
+// назва - рядок "Droid";
+// ціна за штуку - число 2000.
+
+// const productName = "Droid";
+// const pricePerItem = 2000;
+
+
+// №2 Ім'я товару змінили на "Repair droid" і збільшили його ціну на 1500 кредитів. Перевизнач значення змінних pricePerItem і productName після їх оголошення.
+
+// let productName = "Droid";
+// let pricePerItem = 2000;
+// pricePerItem = pricePerItem+=1500;
+// productName = "Repair droid";
+
+
+// №3 Оголоси наступні змінні, використовуючи ключове слово const або let, і присвой їм відповідні значення.
+// topSpeed - число 160.
+// distance - число 617.54.
+// login - рядок "mango935".
+// isOnline - буль true.
+// isAdmin - буль false.
+
+// const topSpeed = 160;
+// const distance = 617.54;
+// const login = "mango935";
+// const isOnline = true;
+// const isAdmin = false;
+
+
+// №4 Доповни код, присвоївши змінній totalPrice вираз для підрахунку загальної суми замовлення. Змінна pricePerItem зберігає ціну однієї одиниці товару, а orderedQuantity - кількість одиниць товару в замовленні.
+
+// const pricePerItem = 3500;
+// const orderedQuantity = 4;
+// const totalPrice = pricePerItem * orderedQuantity;
+// console.log (totalPrice);
+
+
+// №5 Оголоси змінну message і запиши в неї повідомлення про покупку, рядок у форматі: "You picked <назва товару>, price per item is <ціна товару> credits". Де <назва товару> і <ціна товару> — це значення змінних productName і pricePerItem. Використовуй синтаксис шаблонних рядків.
+
+// const productName = 'Droid';
+// const pricePerItem = 3500;
+// const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+
+
+// №6 Магазин з продажу ремонтних дроїдів готовий до відкриття, залишилося написати скрипт для їх замовлення. Оголоси змінні та присвой їм відповідні значення:
+// pricePerDroid - ціна одного дроїда, значення 800
+// orderedQuantity - кількість дроїдів у замовленні, значення 6
+// deliveryFee - вартість доставки, значення 50
+// totalPrice - загальна сума замовлення до сплати, не забудь про вартість доставки
+// message - повідомлення про стан замовлення у форматі "You ordered droids worth <total price> credits. Delivery (<delivery fee> credits) is included in total price."
+
+// const pricePerDroid = 800;
+// const orderedQuantity = 6;
+// const deliveryFee = 50;
+// const totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
+// const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`
+
+
+// №7 Оголоси функцію sayHi, всередині якої додай console.log() з рядком "Hello, this is my first function!". Після оголошення виклич функцію sayHi.
+
+// function sayHi() {
+//     console.log("Hello, this is my first function!")
+// }
+// sayHi();
+
+
+// №8 Функція add повинна вміти додавати три числа і виводити результат у консоль. Додай функції add три параметри: a, b і c, які будуть отримувати значення аргументів під час її виклику.
+// Доповни console.log() таким чином, щоб він логував рядок "Addition result equals <result>", де <result> - це сума переданих чисел.
+
+// function add(a, b, c) {
+//     console.log( `Addition result equals ${a + b + c}`);
+// }
+// add(15, 27, 10);
+// add(10, 20, 30);
+// add(5, 10, 15);
+
+
+// №9 Доповни код функції add таким чином, щоб вона повертала результат додавання значень трьох параметрів: a, b і c.
+
+// function add(a, b, c) {
+//     return a + b + c;
+// }
+// add(15, 27, 10);
+// add(10, 20, 30);
+// add(5, 10, 15);
+
+
+// №10 Функція makeMessage(name, price) складає і повертає повідомлення про покупку. Вона оголошує два параметри, значення яких будуть задаватися під час її виклику.
+// name - назва товару
+// price - ціна товару
+// Доповни код функції таким чином, щоб у змінну message записувався рядок "You picked <product name>, price per item is <product price> credits", де <product name> і <product price> - це значення параметрів name і price. Використовуй синтаксис шаблонних рядків.
+
+// function makeMessage (name, price) {
+//     const message = `You picked ${name}, price per item is ${price} credits`;
+//     return message;
+// };
+// makeMessage('Radar', 6150);
+// makeMessage('Scanner', 3500);
+// makeMessage('Reactor', 8000);
+// makeMessage('Engine', 4070);
+
+
+// №11 Функція calculateTotalPrice рахує і повертає загальну суму покупки. Вона приймає два параметри, значення яких будуть задаватися під час її виклику.
+// orderedQuantity - кількість одиниць товару в замовленні;
+// pricePerItem - ціна однієї одиниці товару.
+// Доповни код функції таким чином, щоб у змінну totalPrice записувалася загальна сума покупки - результат множення кількості товарів на ціну одного.
+
+// function calculateTotalPrice (orderedQuantity, pricePerItem) {
+//     const totalPrice = orderedQuantity * pricePerItem;
+//     return totalPrice;
+// };
+// calculateTotalPrice(5, 100);
+// calculateTotalPrice(8, 60);
+// calculateTotalPrice(3, 400);
+// calculateTotalPrice(1, 3500);
+// calculateTotalPrice(12, 70);
+
+
+
+// №12 Функція makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) складає і повертає повідомлення про покупку ремонтних дроїдів. Вона оголошує три параметри, значення яких будуть задаватися під час її виклику.
+// orderedQuantity - кількість дроїдів у замовленні
+// pricePerDroid - ціна одного дроїда
+// deliveryFee - вартість доставки
+// Доповни код функції таким чином, щоб вона повертала повідомлення про замовлення у форматі "You ordered droids worth <total price> credits. Delivery (<delivery fee> credits) is included in total price.". Не забудь про ціну доставки в обчисленнях загальної вартості.
+
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//     const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+//     return `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+// }
+// makeOrderMessage(2, 100, 50);
+// makeOrderMessage(4, 300, 100);
+// makeOrderMessage(10, 70, 200);
+
+
+// №13 Функція isAdult оголошує один параметр age (вік), значення якого буде задаватися під час її виклику. Присвой змінній passed вираз перевірки віку користувача на повноліття. Людина вважається повнолітньою у віці 18 років і старше.
+
+// function isAdult(age) {
+//     const passed = age >= 18;
+//     return passed;
+// }
+
+
+// №14
+// №15
+// №16
+// №17
+// №18
+// №19
+// №20
+// №21
+// №22
+// №23
+// №24
+// №25
+// №26
+// №27
+// №28
+// №29
+// №30
+// №31
+// №32
+// №33
+// №34
+// №35
+// №36
